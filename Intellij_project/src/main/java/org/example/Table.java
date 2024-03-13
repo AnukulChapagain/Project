@@ -45,11 +45,11 @@ public class Table {
             try (Connection connection = DriverManager.getConnection(url);
                  Statement statement = connection.createStatement()) {
 
-                // Create MenuItems table
+           
                 statement.execute(createMenuItemsTableSQL);
                 System.out.println("MenuItems table created successfully.");
 
-                // Create Employees table
+           
                 statement.execute(createEmployeesTableSQL);
                 System.out.println("Employees table created successfully.");
 
