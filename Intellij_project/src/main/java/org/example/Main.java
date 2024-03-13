@@ -54,7 +54,7 @@ public class Main {
         String itemDescription = sc.nextLine();
         System.out.print("Price: ");
         double itemPrice = sc.nextDouble();
-        sc.nextLine(); // Consume newline character
+        sc.nextLine(); 
         System.out.print("Ingredients: ");
         String ingredientInput = sc.nextLine();
         List<String> ingredients = new ArrayList<>();
@@ -71,7 +71,7 @@ public class Main {
         String ingredient = sc.nextLine();
         System.out.print("Quantity: ");
         int quantity = sc.nextInt();
-        sc.nextLine(); // Consume newline character
+        sc.nextLine(); 
         return new Inventory(ingredient, quantity);
     }
 
@@ -91,7 +91,7 @@ public class Main {
         }
         System.out.print("Number of guests: ");
         int numGuests = sc.nextInt();
-        sc.nextLine(); // Consume newline character
+        sc.nextLine(); 
         return new Reservation(customerName, date, numGuests);
     }
 
@@ -100,13 +100,13 @@ public class Main {
         System.out.println("Enter order details:");
         System.out.print("Enter number of items in the order: ");
         int numItems = scanner.nextInt();
-        scanner.nextLine(); // Consume newline character
+        scanner.nextLine(); 
         for (int i = 0; i < Math.min(numItems, 5); i++) {
             System.out.print("Enter item " + (i + 1) + " name: ");
             String itemNameInput = scanner.nextLine();
             System.out.print("Enter quantity for item " + (i + 1) + ": ");
             int quantity = scanner.nextInt();
-            scanner.nextLine(); // Consume newline character
+            scanner.nextLine(); 
             MenuItem item = new MenuItem(itemNameInput, "", 0, new ArrayList<>());
             order.addItem(item, quantity);
         }
@@ -120,10 +120,10 @@ public class Main {
         String role = sc.nextLine();
         System.out.print("\t\t\t\t\t\t\t\t\t\tHourly wage given to employee: ");
         double hourlyWage = sc.nextDouble();
-        sc.nextLine(); // Consume newline character
+        sc.nextLine(); 
         System.out.print("\t\t\t\t\t\t\t\t\t\tIs manager? (true/false): ");
         boolean isManager = sc.nextBoolean();
-        sc.nextLine(); // Consume newline character
+        sc.nextLine();
         return new Employee(employeeName, role, hourlyWage, isManager);
     }
 
