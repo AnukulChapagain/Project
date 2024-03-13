@@ -61,7 +61,7 @@ public class Table {
 
 
             } catch (SQLException e) {
-                System.err.println("Error creating table: " + e.getMessage());
+                System.out.println("Error creating table: " + e.getMessage());
             }
         }
     }
