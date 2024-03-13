@@ -141,7 +141,7 @@ public class Main {
             statement.executeUpdate();
             System.out.println("Menu item inserted successfully.");
         } catch (SQLException e) {
-            System.err.println("Error inserting menu item: " + e.getMessage());
+            System.out.println("Error inserting menu item: " + e.getMessage());
         }
     }
 
@@ -158,7 +158,7 @@ public class Main {
             }
             System.out.println("Order inserted successfully.");
         } catch (SQLException e) {
-            System.err.println("Error inserting order: " + e.getMessage());
+            System.out.println("Error inserting order: " + e.getMessage());
         }
     }
 
@@ -176,7 +176,7 @@ public class Main {
             statement.executeUpdate();
             System.out.println("Reservation inserted successfully.");
         } catch (SQLException e) {
-            System.err.println("Error inserting reservation: " + e.getMessage());
+            System.out.println("Error inserting reservation: " + e.getMessage());
         }
     }
 
@@ -193,7 +193,7 @@ public class Main {
             statement.executeUpdate();
             System.out.println("Employee inserted successfully.");
         } catch (SQLException e) {
-            System.err.println("Error inserting employee: " + e.getMessage());
+            System.out.println("Error inserting employee: " + e.getMessage());
         }
     }
 }
